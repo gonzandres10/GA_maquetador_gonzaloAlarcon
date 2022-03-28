@@ -1,0 +1,139 @@
+body{
+    background-color: #DAFDBA;
+}
+
+header{
+    background-color: #45C4B0;
+    margin: -1%;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 15%;
+    height: 15%;
+    padding: 1%;
+    margin-top:0.5%;
+    
+}
+.container{
+    padding: 5% 20%;
+    
+}
+.container h1{
+    text-align: center;
+    font-size: 40px;
+}
+.container p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 20px;
+}
+.container img{
+    width: 99%;
+    height: 100%;
+    border: 10px solid #012030;
+}
+.containertext {
+    position: relative;
+    width: 100%;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #012030;
+}
+.containertext:hover .overlay {
+    opacity: 1;
+}
+.text {
+    color: #DAFDBA;
+    font-size: 20px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.containercolor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+.containercolorone{
+    background-color: #012030;
+    width: 20%;
+    font-size:100px;
+    height: 100%;
+    margin: 20px;
+    padding: 20px;
+    color: #012030;
+}
+.containercolortwo{
+    background-color: #012030;
+    width: 20%;
+    margin: 20px;
+    font-size:100px;
+    padding: 20px;
+    color: #012030;
+}
+.containercolorthree{
+    background-color: #012030;
+    width: 20%;
+    font-size:100px;
+    height: 100%;
+    margin: 20px;
+    padding: 20px;
+    color: #012030;
+}
+.containercolorone:active{
+    background-color: #13678A;
+    width: 20%;
+    font-size:100px;
+    height: 100%;
+    margin: 20px;
+    padding: 20px;
+    color: #13678A;
+}
+.containercolortwo:active {
+    background-color: #45C4B0;
+    width: 20%;
+    font-size:100px;
+    height: 100%;
+    margin: 20px;
+    padding: 20px;
+    color: #45C4B0;
+}
+.containercolorthree:active {
+    background-color: #9AEBA3;
+    width: 20%;
+    font-size:100px;
+    height: 100%;
+    margin: 20px;
+    padding: 20px;
+    color: #9AEBA3;
+}
+
+footer{
+    background-color: #45C4B0;
+    margin: -1%;
+    display: flex;
+    justify-content: center;
+}
+footer .flecha{
+    margin-top:100px;
+    left: 900px;
+}
