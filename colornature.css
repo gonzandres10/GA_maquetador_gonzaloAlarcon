@@ -17,7 +17,13 @@ header{
 }
 .container{
     padding: 5% 20%;
-    
+}
+.containerflip{
+    padding: 5% 20%; 
+}
+.containerflip h1{
+    text-align: center;
+    font-size: 40px;
 }
 .container h1{
     text-align: center;
@@ -33,39 +39,42 @@ header{
     height: 100%;
     border: 10px solid #012030;
 }
-.containertext {
+.imgflip{
+    width: 600px;
+    height: 600px;
+    border: 10px solid #012030;
+}
+.flip-card {
+    background-color: transparent;
+    width: 600px;
+    height: 600px;
+    perspective: 2000px;
+    margin-left: 450px;
+}
+.flip-card-inner {
     position: relative;
-    width: 100%;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
 }
-.overlay {
+
+.flip-card-front, .flip-card-back {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-back {
     background-color: #012030;
-}
-.containertext:hover .overlay {
-    opacity: 1;
-}
-.text {
     color: #DAFDBA;
-    font-size: 20px;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    right: 5%;
-    text-align: justify;
-    text-justify: inter-word;
+    transform: rotateY(180deg);
+    padding: 5%;
 }
 .containercolor{
     display: flex;
